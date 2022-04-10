@@ -25,6 +25,10 @@ nav {
             border-radius: 25px;
             border: 1px solid;
 
+            @media (max-width:900px) {
+                display: none;
+            }
+
 
         }
     }
@@ -42,12 +46,16 @@ nav {
 }
 
 #banner {
-    width: 100%;
+    width: 100vw;
     height: 352px;
     background-image: url("../img/banner-image.png");
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
+
+    @media(max-width:900px) {
+        background-position: center center;
+    }
 
 
     #info-wrapper {
@@ -57,6 +65,10 @@ nav {
         color: white;
         font-weight: bold;
         letter-spacing: 1px;
+
+        @media(max-width:900px) {
+            font-size: 10px;
+        }
 
         button {
             margin-top: 10px;
@@ -107,6 +119,7 @@ nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
 }
 
@@ -151,6 +164,13 @@ nav {
     padding: 20px;
     margin-top: 50px;
 
+    @media(max-width:900px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
+
     img {
         width: 120px;
         height: 35px;
@@ -162,6 +182,7 @@ nav {
         color: #464646;
         font-size: 16px;
         font-weight: 500;
+        margin-top: 25px;
 
         p {
             margin: 10px 0;
@@ -173,12 +194,19 @@ nav {
         display: flex;
         flex-direction: column;
         color: #464646;
+        margin-top: 25px;
 
 
         input {
             width: 500px;
             height: 50px;
             margin-top: 5px;
+
+            @media(max-width:900px) {
+                width: 200px;
+                height: 50px;
+                ;
+            }
 
         }
 
@@ -201,7 +229,8 @@ nav {
 footer {
     margin-top: 0;
     text-align: center;
-    background-color: #EAF2FD;
+    margin-top: 25px;
+
 
     div {
         display: flex;

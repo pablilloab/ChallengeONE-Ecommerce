@@ -39,6 +39,12 @@ nav div input {
   border: 1px solid;
 }
 
+@media (max-width: 900px) {
+  nav div input {
+    display: none;
+  }
+}
+
 nav button {
   width: 182px;
   height: 52px;
@@ -50,12 +56,18 @@ nav button {
 }
 
 #banner {
-  width: 100%;
+  width: 100vw;
   height: 352px;
   background-image: url("../img/banner-image.png");
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
+}
+
+@media (max-width: 900px) {
+  #banner {
+    background-position: center center;
+  }
 }
 
 #banner #info-wrapper {
@@ -65,6 +77,12 @@ nav button {
   color: white;
   font-weight: bold;
   letter-spacing: 1px;
+}
+
+@media (max-width: 900px) {
+  #banner #info-wrapper {
+    font-size: 10px;
+  }
 }
 
 #banner #info-wrapper button {
@@ -117,6 +135,8 @@ nav button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 #product-card {
@@ -166,6 +186,22 @@ nav button {
   margin-top: 50px;
 }
 
+@media (max-width: 900px) {
+  #contacto {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0px;
+  }
+}
+
 #contacto img {
   width: 120px;
   height: 35px;
@@ -182,6 +218,7 @@ nav button {
   color: #464646;
   font-size: 16px;
   font-weight: 500;
+  margin-top: 25px;
 }
 
 #contacto #info p {
@@ -197,12 +234,20 @@ nav button {
       -ms-flex-direction: column;
           flex-direction: column;
   color: #464646;
+  margin-top: 25px;
 }
 
 #contacto #form-contacto input {
   width: 500px;
   height: 50px;
   margin-top: 5px;
+}
+
+@media (max-width: 900px) {
+  #contacto #form-contacto input {
+    width: 200px;
+    height: 50px;
+  }
 }
 
 #contacto #form-contacto button {
@@ -219,7 +264,7 @@ nav button {
 footer {
   margin-top: 0;
   text-align: center;
-  background-color: #EAF2FD;
+  margin-top: 25px;
 }
 
 footer div {
