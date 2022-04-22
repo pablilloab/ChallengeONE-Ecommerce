@@ -185,6 +185,7 @@ nav button {
   background-color: #2A7AE4;
   text-decoration: none;
   font-size: 10px;
+  cursor: pointer;
 }
 
 #contacto {
@@ -308,6 +309,18 @@ footer div div img {
   z-index: 1;
   position: absolute;
   display: none;
+}
+
+#modal button {
+  margin-top: 10px;
+  width: 100%;
+  height: 30px;
+  border: none;
+  color: white;
+  background-color: #2A7AE4;
+  text-decoration: none;
+  font-size: 15px;
+  cursor: pointer;
 }
 
 #product-info {
