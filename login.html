@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geek</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,500;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <img src="./img/Logo Alura Geek.png" alt="Logo-Alura-Geek">
+                <label for="search"></label><input type="search" placeholder="¿Qué deseas buscar?">&#128269</label>
+            </div>
+            <a href="./index.html"><button>Home</button></a>
+        </nav>
+    </header>
+
+    <section id="login">
+        <label for="usuario">Nombre de Usuario</label>
+        <input id="usuario" type="text" required>
+        <label for="contrasena">Contraseña</label>
+        <input id="contrasena" type="text" required>
+
+        <div id="opciones">
+            <a href="./registro.html"><span>Registrarse</span></a>
+            <span>Olvide mi contraseña</span>
+        </div>
+
+        <button id="btn-login" onclick="handleLogin()">Continuar</button>
+        <span id="logstatus"></span>
+    </section>
+
+
+
+    <script src="./js/handdleLogin.js"></script>
+
+</body>
+
+</html>
