@@ -1,7 +1,7 @@
 const starWars = [
     {
         id:0,
-        img:"../img/star-wars/baby-yoda.jpg",
+        img:"./img/star-wars/baby-yoda.jpg",
         title:"Baby Yoda",
         desc:"Pequeño muñequito del adorable baby Yoda!!",
         precio:60.00
